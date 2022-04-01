@@ -13,7 +13,10 @@ inputPass.send_keys("password@123")
 #btnLogin = driver.find_element(By.NAME, "login")
 #btnLogin = driver.find_element(By.XPATH, '//*[@id="u_0_d_mP"]')     # copy Xpath # it will not work in facebook.com for logging btn
 #btnLogin = driver.find_element(By.XPATH, '//*[@name="login"]')     # copy Xpath # it will not work in facebook.com for logging btn
+
 btnLogin = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button')
+
+print("Facebook Login Script Run Test")
 
 btnLogin.click()
 
