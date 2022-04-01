@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 driver.get("https://www.facebook.com/")
 
-inputEmail = driver.find_element_by_id("email")
+inputEmail = driver.find_element(By.ID,"email")
 inputEmail.send_keys("sdfadf@gmail.com")
 
 inputPass = driver.find_element(By.ID, "pass")
@@ -16,9 +16,11 @@ inputPass.send_keys("password@123")
 
 btnLogin = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button')
 
-print("Facebook Login Script Run Test")
+print("Facebook Login Script Run Test Complete")
 
 btnLogin.click()
+
+driver.close()
 
 
 
